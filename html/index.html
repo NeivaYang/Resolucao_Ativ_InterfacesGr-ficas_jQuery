@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Jquery UI</title>
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/jquery-ui.structure.css">
+    <link rel="stylesheet" href="../css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="external">
+    <div class="card">
+        <div class="inputs">
+            <h2>Valor da diária:</h2> <input type="number" class="diaria" name="" id="diaria" title="Insira o valor da diária" required>
+        </div>
+
+        <div class="inputs">
+            <h2>Data de ida:</h2> <input type="text" class="" name="ida" id="ida" title="Insira a data de ida" required>
+        </div>
+
+        <div class="inputs">
+            <h2>Data de retorno:</h2> <input type="text" class="" name="volta" id="volta" title="Insira a data de retorno" required>
+        </div>
+
+
+        <div class="radioBtns">
+            <h2 class="align"> Tem deslocamento: </h2>
+            <input type="checkbox" class="checkbox" name="sim" value="sim" id="sim" title="Marque aqui se houver deslocamento"><span>Sim</span>
+            <input type="checkbox" class="checkbox" name="nao" value="nao" id="nao" title="Marque aqui se não houver deslocamento"><span>Não</span>
+        </div>
+
+        <button id="calcBtn" type="submit"><strong>CALCULAR</strong></button>   
+    </div>
+</div>
+
+    <div id="dialogDefault" title="RESULTADO"></div>
+
+    <script src="../scripts/libs/jquery.js"></script>
+    <script src="../scripts/libs/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
